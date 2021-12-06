@@ -876,11 +876,12 @@ The types, statuses and series statuses aren't explicitly given by MyAnimeList, 
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pictureImage | date | The link of the picture's anime recommended |
+| pictureImage | string | The link of the picture's anime recommended |
 | animeLink | string | The link of the anime recommended |
-| anime | number | The name of the anime recommended |
-| mainRecommendation | number | The recommendation |
+| anime | string | The name of the anime recommended |
+| mainRecommendation | string | The recommendation |
 | author | string | The name of the author |
+| otherRecommendations | number | The number of other people with the same recommendation |
 
 #### Anime episodes data model
 

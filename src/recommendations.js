@@ -14,6 +14,7 @@ const parsePage = ($) => {
     recommendation.anime = $(this).find('tr td:nth-child(2) div:nth-child(2) a strong').text().trim()
     recommendation.mainRecommendation = $(this).find('tr td:nth-child(2) .detail-user-recs-text').text().trim()
     recommendation.author = $(this).find('tr td:nth-child(2) > .borderClass .spaceit_pad:nth-child(2) > a').text().trim()
+    recommendation.otherRecommendations = $(this).find('tr td:nth-child(3) a strong').text().trim()
     results.push(recommendation)
   })
 
