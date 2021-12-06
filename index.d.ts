@@ -1449,6 +1449,11 @@ declare module 'mal-scraper' {
      * The name of the author
      */
     author?: string;
+
+    /**
+     * The number of other recommendations
+     */
+    otherRecommendations?: number;
   }
 
   interface AnimeStatsDataModel {

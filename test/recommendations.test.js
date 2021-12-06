@@ -26,7 +26,8 @@ test('getRecommendationsList returns the recommendation for Bleach with ID and n
     t.is(data[1].anime, 'Naruto: Shippuuden')
     t.is(data[2].author, 'xaynie')
     t.is(data[2].anime, 'Naruto')
-    t.truthy(isNaN(parseInt(data[0].otherRecommendations)))
+    t.truthy(data[0].otherRecommendations > 20)
+    t.is(data[data.length - 1].otherRecommendations, 0)
   } catch (e) {
     t.fail()
   }
